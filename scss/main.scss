@@ -119,8 +119,12 @@ a {
 
   h1,
   h3 {
-    // border: 1px $test2 solid;
     margin: 0 auto;
     text-align: center;
+  }
+
+  h3 {
+    // border: 1px $test2 solid;
+    padding: 1em;
   }
 }

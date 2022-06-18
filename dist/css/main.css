@@ -81,3 +81,5 @@ a {
   .header-content h3 {
     margin: 0 auto;
     text-align: center; }
+  .header-content h3 {
+    padding: 1em; }
