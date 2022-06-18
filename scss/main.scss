@@ -36,13 +36,13 @@ h3 {
 
 // Header typography
 .top-line {
-  font-weight: 300;
-  font-size: 2rem;
+  font-weight: 400;
+  font-size: 2.5rem;
 }
 
 .second-line {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 body {
@@ -87,7 +87,6 @@ a {
 
 .nav-logo {
   display: flex;
-  background: $nav-logo;
   max-width: 40px;
   max-height: 40px;
   font-size: 1rem;
@@ -115,16 +114,19 @@ a {
 // Header content
 .header-content {
   // border: 1px $test2 solid;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
 
   h1,
   h3 {
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto;
+  }
+
+  h1 {
+    // padding-bottom: 1em;
   }
 
   h3 {
-    // border: 1px $test2 solid;
-    padding: 1em;
+    line-height: 1.7;
   }
 }
