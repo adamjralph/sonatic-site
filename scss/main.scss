@@ -1,0 +1,126 @@
+@import "config";
+@import "utilities";
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+// Typology
+html {
+  font-family: museo-sans, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: $font-color;
+}
+
+p {
+  font-weight: 500;
+  // background-color: $lighter-color;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+// Header typography
+.top-line {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.second-line {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+body {
+  line-height: 1.6;
+  background-color: $main-background;
+}
+
+// Utilities
+// Page
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+  // border: 1px $test solid;
+  padding: 0 1em;
+}
+
+// Components
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: $main-color;
+  color: $font-light;
+}
+
+// Header
+
+// Navbar
+.navbar {
+  // border: 1px $test2 solid;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px $darker-color solid;
+}
+
+.nav-logo {
+  display: flex;
+  background: $nav-logo;
+  max-width: 40px;
+  max-height: 40px;
+  font-size: 1rem;
+
+  .logo-heading {
+    padding: 1em 0;
+    // background-color: $light-color;
+  }
+}
+
+.nav-links {
+  display: flex;
+  padding: 1em 0;
+  max-width: 50%;
+
+  li {
+    padding: 0 1em;
+  }
+
+  li:hover {
+    color: $main-color;
+  }
+}
+
+// Header content
+.header-content {
+  // border: 1px $test2 solid;
+  padding: 1.5rem;
+
+  h1,
+  h3 {
+    // border: 1px $test2 solid;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

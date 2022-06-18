@@ -1,0 +1,28 @@
+{
+  "name": "sonatic-site",
+  "version": "1.0.0",
+  "description": "Portfolio Website showcasing my web-development work",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamjralph/sonatic-site.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "JavaScript",
+    "SASS"
+  ],
+  "author": "Adam Ralph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamjralph/sonatic-site/issues"
+  },
+  "homepage": "http://sonatic.dev",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

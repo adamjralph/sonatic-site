@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: museo-sans, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: #263238; }
+
+p {
+  font-weight: 500; }
+
+h1 {
+  font-weight: 300;
+  font-size: 2rem; }
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem; }
+
+h3 {
+  font-weight: 400;
+  font-size: 1rem; }
+
+.top-line {
+  font-weight: 300;
+  font-size: 2rem; }
+
+.second-line {
+  font-weight: 700;
+  font-size: 2rem; }
+
+body {
+  line-height: 1.6;
+  background-color: #fff; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: 400; }
+
+.btn {
+  background-color: #076acd;
+  color: #fcfcfc; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #dedede solid; }
+
+.nav-logo {
+  display: flex;
+  background: url("../dist/img/Sonatic-logo.png");
+  max-width: 40px;
+  max-height: 40px;
+  font-size: 1rem; }
+  .nav-logo .logo-heading {
+    padding: 1em 0; }
+
+.nav-links {
+  display: flex;
+  padding: 1em 0;
+  max-width: 50%; }
+  .nav-links li {
+    padding: 0 1em; }
+  .nav-links li:hover {
+    color: #076acd; }
+
+.header-content {
+  padding: 1.5rem; }
+  .header-content h1,
+  .header-content h3 {
+    margin: 0 auto;
+    text-align: center; }
