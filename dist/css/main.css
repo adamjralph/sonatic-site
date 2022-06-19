@@ -38,8 +38,13 @@ body {
   line-height: 1.6;
   background-color: #fff; }
 
-.container {
-  max-width: 1280px;
+.header-container {
+  max-width: 2400px;
+  margin: 0 auto;
+  padding: 0 1em; }
+
+.content-container {
+  max-width: 950px;
   margin: 0 auto;
   padding: 0 1em; }
 
@@ -55,6 +60,15 @@ i {
   display: inline-block; }
 
 .btn {
+  border: 1px #263238 solid;
+  padding: 1em;
+  width: 40%; }
+
+.btn-light {
+  background-color: #fff;
+  color: #263238; }
+
+.btn-dark {
   background-color: #076acd;
   color: #fcfcfc; }
 
@@ -65,8 +79,8 @@ i {
 
 .nav-logo {
   display: flex;
-  max-width: 40px;
-  max-height: 40px;
+  width: 40px;
+  height: 40px;
   font-size: 1rem;
   margin: 1rem 0; }
   @media only screen and (max-width: 468px) {
@@ -81,7 +95,7 @@ i {
   margin: 0.8em 0;
   max-width: 50%;
   line-height: 1; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 810px) {
     .nav-links {
       display: none; } }
   .nav-links li {
@@ -91,7 +105,7 @@ i {
 
 .nav-toggle {
   display: none; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 810px) {
     .nav-toggle {
       position: absolute;
       display: flex;
@@ -104,12 +118,15 @@ i {
       border: 0;
       cursor: pointer;
       line-height: 1; } }
-  @media only screen and (max-width: 768px) and (max-width: 468px) {
+  @media only screen and (max-width: 810px) and (max-width: 468px) {
     .nav-toggle {
       position: relative;
       margin: auto; } }
   .nav-toggle:hover {
     background-color: #f4f4f4; }
+  .nav-toggle .menu-heading {
+    font-size: 1.5em;
+    font-weight: 500; }
   .nav-toggle .hamburger {
     display: block;
     position: relative; }
@@ -122,6 +139,12 @@ i {
     width: 1.5em;
     height: 0.09rem;
     background-color: #263238; }
+    @media only screen and (max-width: 468px) {
+      .nav-toggle .hamburger,
+      .nav-toggle .hamburger::before,
+      .nav-toggle .hamburger::after {
+        width: 2em;
+        height: 0.15rem; } }
 
 .hamburger::before,
 .hamburger::after {
@@ -149,7 +172,7 @@ i {
 
 .mobile-menu {
   display: none; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 810px) {
     .mobile-menu {
       position: relative;
       flex-direction: column;
@@ -160,9 +183,12 @@ i {
       transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1); } }
   .mobile-menu .mobile-links {
     display: none; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 810px) {
       .mobile-menu .mobile-links {
         display: block; } }
+    @media only screen and (max-width: 468px) {
+      .mobile-menu .mobile-links {
+        text-align: center; } }
   .mobile-menu .mobile-links .link-div {
     border-bottom: 1px #dedede solid;
     margin: auto;
@@ -180,3 +206,18 @@ i {
     margin: 0 auto; }
   .header-content h3 {
     line-height: 1.7; }
+
+.intro-content {
+  margin-top: 200px;
+  display: flex; }
+
+.intro-info {
+  display: flex;
+  flex-direction: column; }
+  .intro-info .intro-heading {
+    font-weight: 700;
+    margin: 10rem 0 2rem 0; }
+
+.intro-image {
+  height: 500px;
+  width: 500px; }

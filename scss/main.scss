@@ -57,10 +57,15 @@ body {
 
 // Utilities
 // Page
-.container {
-  max-width: $website-width;
+.header-container {
+  max-width: $header-width;
   margin: 0 auto;
-  // border: 1px $test solid;
+  padding: 0 1em;
+}
+
+.content-container {
+  max-width: $content-width;
+  margin: 0 auto;
   padding: 0 1em;
 }
 
@@ -80,10 +85,20 @@ i {
 }
 
 .btn {
+  border: 1px $font-color solid;
+  padding: 1em;
+  width: 40%;
+}
+
+.btn-light {
+  background-color: $main-background;
+  color: $font-color;
+}
+
+.btn-dark {
   background-color: $main-color;
   color: $font-light;
 }
-
 // Header
 
 // Navbar
@@ -98,13 +113,12 @@ i {
     display: none;
   }
   display: flex;
-  max-width: 40px;
-  max-height: 40px;
+  width: 40px;
+  height: 40px;
   font-size: 1rem;
   margin: 1rem 0;
   .logo-heading {
     padding: 1em 0;
-    // background-color: $light-color;
   }
 }
 
@@ -136,7 +150,6 @@ i {
     position: absolute;
     display: flex;
     align-items: center;
-    // top: 1rem;
     right: 0;
     padding: 1em;
     margin: 1em;
@@ -157,6 +170,11 @@ i {
     background-color: $lighter-color;
   }
 
+  .menu-heading {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
   .hamburger {
     display: block;
     position: relative;
@@ -173,8 +191,11 @@ i {
     width: 1.5em;
     height: 0.09rem;
     background-color: $font-color;
-
     // transition: transform 258ms ease-in-out;
+    @include devices(mobile) {
+      width: 2em;
+      height: 0.15rem;
+    }
   }
 }
 
@@ -205,8 +226,6 @@ i {
 }
 
 .nav-open .mobile-menu {
-  // transform: translateX(0);
-  // transform: translateX(100%);
   display: flex;
 }
 
@@ -227,6 +246,9 @@ i {
     display: none;
     @include devices(tablet) {
       display: block;
+    }
+    @include devices(mobile) {
+      text-align: center;
     }
   }
   .mobile-links .link-div {
@@ -255,11 +277,27 @@ i {
     margin: 0 auto;
   }
 
-  h1 {
-    // padding-bottom: 1em;
-  }
-
   h3 {
     line-height: 1.7;
   }
+}
+
+.intro-content {
+  margin-top: 200px;
+  display: flex;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+
+  .intro-heading {
+    font-weight: 700;
+    margin: 10rem 0 2rem 0;
+  }
+}
+
+.intro-image {
+  height: 500px;
+  width: 500px;
 }
