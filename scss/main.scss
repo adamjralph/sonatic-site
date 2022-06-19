@@ -287,15 +287,26 @@ i {
   }
 }
 
+// Intro Content
 .intro-content {
-  margin: 100px 0;
+  margin: 10rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @include devices(mid) {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .intro-info {
   display: flex;
   flex-direction: column;
+  @include devices(mid) {
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+  }
 
   .intro-heading {
     font-weight: 700;
@@ -306,9 +317,15 @@ i {
   .intro-text {
     max-width: 70%;
     margin-bottom: 2rem;
+    @include devices(mid) {
+      margin: auto;
+    }
   }
 
   .intro-buttons {
+    @include devices(mid) {
+      margin-top: 2rem;
+    }
     .btn:hover {
       box-shadow: 0 0 8px $btn-hover;
     }
@@ -324,4 +341,8 @@ i {
 .intro-image {
   height: 100%;
   width: 100%;
+  @include devices(mid) {
+    width: 50%;
+    margin: 2rem auto;
+  }
 }

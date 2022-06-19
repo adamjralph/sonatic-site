@@ -211,13 +211,23 @@ i {
     line-height: 1.7; }
 
 .intro-content {
-  margin: 100px 0;
+  margin: 10rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 890px) {
+    .intro-content {
+      margin: 5rem 0;
+      display: flex;
+      flex-direction: column; } }
 
 .intro-info {
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 890px) {
+    .intro-info {
+      max-width: 80%;
+      text-align: center;
+      margin: auto; } }
   .intro-info .intro-heading {
     font-weight: 700;
     font-size: 44px;
@@ -225,6 +235,12 @@ i {
   .intro-info .intro-text {
     max-width: 70%;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 890px) {
+      .intro-info .intro-text {
+        margin: auto; } }
+  @media only screen and (max-width: 890px) {
+    .intro-info .intro-buttons {
+      margin-top: 2rem; } }
   .intro-info .intro-buttons .btn:hover {
     box-shadow: 0 0 8px #0693e3; }
   .intro-info .intro-buttons .btn-dark {
@@ -235,3 +251,7 @@ i {
 .intro-image {
   height: 100%;
   width: 100%; }
+  @media only screen and (max-width: 890px) {
+    .intro-image {
+      width: 50%;
+      margin: 2rem auto; } }
