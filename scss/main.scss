@@ -20,7 +20,8 @@ html {
 }
 
 p {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 0.9rem;
   // background-color: $lighter-color;
 }
 
@@ -88,6 +89,8 @@ i {
   border: 1px $main-color solid;
   padding: 0.8em;
   width: 35%;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .btn-light {
@@ -106,19 +109,37 @@ i {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px $darker-color solid;
+  @include devices(mobile) {
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+  }
 }
 
 .nav-logo {
-  @include devices(mobile) {
-    display: none;
-  }
   display: flex;
   width: 40px;
   height: 40px;
   font-size: 1rem;
   margin: 1rem 0;
-  .logo-heading {
-    padding: 1em 0;
+  // @include devices(mobile) {
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+}
+
+.logo-heading {
+  padding: 1em 0;
+  @include devices(mobile) {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.logo {
+  @include devices(mobile) {
+    display: none;
   }
 }
 
@@ -130,7 +151,7 @@ i {
   display: flex;
   padding: 1em 0;
   margin: 0.8em 0;
-  max-width: 50%;
+  max-width: 100%;
 
   line-height: 1;
 
