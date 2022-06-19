@@ -69,10 +69,27 @@ a {
   display: flex;
   padding: 1em 0;
   max-width: 50%; }
+  @media only screen and (max-width: 768px) {
+    .nav-links {
+      display: none; } }
   .nav-links li {
     padding: 0 1em; }
   .nav-links li:hover {
     color: #076acd; }
+
+.nav-toggle {
+  position: absolute;
+  top: 2em;
+  left: 0; }
+  .nav-toggle .hamburger,
+  .nav-toggle .hamburger::before,
+  .nav-toggle .hamburger::after {
+    display: block;
+    position: relative;
+    border: 1px blue solid;
+    width: 2em;
+    height: 3px;
+    background-color: #263238; }
 
 .header-content {
   padding-top: 1.5rem; }

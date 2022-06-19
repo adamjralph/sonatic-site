@@ -9,26 +9,38 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./dist/css/main.css" />
+
     <title>Sonatic | Web Development Portfolio</title>
   </head>
   <body>
     <header class="header" id="header-home">
       <div class="container">
         <nav class="navbar" id="navbar">
-          <div class="nav-logo">
+          <a class="nav-logo" href="index.html">
             <img
               class="logo"
               src="./dist/img/Sonatic-trio.png"
               alt="Portfolio Logo"
             />
             <h4 class="logo-heading">Sonatic</h4>
-          </div>
+          </a>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="sites.html">Examples</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+          <div class="mobile-menu">
+            <button class="nav-toggle">
+              <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sites.html">Examples</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="header-content">
           <h1 class="top-line">Fully Responsive Web Portfolio,</h1>

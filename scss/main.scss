@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "media";
 
 // Reset
 * {
@@ -98,6 +99,10 @@ a {
 }
 
 .nav-links {
+  @include devices(tablet) {
+    display: none;
+  }
+
   display: flex;
   padding: 1em 0;
   max-width: 50%;
@@ -108,6 +113,24 @@ a {
 
   li:hover {
     color: $main-color;
+  }
+}
+
+// Nav toggle
+.nav-toggle {
+  position: absolute;
+  top: 2em;
+  left: 0;
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    position: relative;
+    border: 1px $test2 solid;
+    width: 2em;
+    height: 3px;
+    background-color: $font-color;
   }
 }
 
