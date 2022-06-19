@@ -85,9 +85,9 @@ i {
 }
 
 .btn {
-  border: 1px $font-color solid;
-  padding: 1em;
-  width: 40%;
+  border: 1px $main-color solid;
+  padding: 0.8em;
+  width: 35%;
 }
 
 .btn-light {
@@ -140,6 +140,11 @@ i {
 
   li:hover {
     color: $main-color;
+  }
+
+  li a {
+    font-weight: 400;
+    font-size: 0.8rem;
   }
 }
 
@@ -283,8 +288,9 @@ i {
 }
 
 .intro-content {
-  margin-top: 200px;
-  display: flex;
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .intro-info {
@@ -293,11 +299,29 @@ i {
 
   .intro-heading {
     font-weight: 700;
-    margin: 10rem 0 2rem 0;
+    font-size: 44px;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .intro-text {
+    max-width: 70%;
+    margin-bottom: 2rem;
+  }
+
+  .intro-buttons {
+    .btn:hover {
+      box-shadow: 0 0 8px $btn-hover;
+    }
+    .btn-dark {
+      margin-left: 0.5rem;
+      &:hover {
+        background-color: $btn-hover;
+      }
+    }
   }
 }
 
 .intro-image {
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }

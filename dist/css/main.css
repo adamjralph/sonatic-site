@@ -60,9 +60,9 @@ i {
   display: inline-block; }
 
 .btn {
-  border: 1px #263238 solid;
-  padding: 1em;
-  width: 40%; }
+  border: 1px #076acd solid;
+  padding: 0.8em;
+  width: 35%; }
 
 .btn-light {
   background-color: #fff;
@@ -102,6 +102,9 @@ i {
     padding: 0 1em; }
   .nav-links li:hover {
     color: #076acd; }
+  .nav-links li a {
+    font-weight: 400;
+    font-size: 0.8rem; }
 
 .nav-toggle {
   display: none; }
@@ -208,16 +211,27 @@ i {
     line-height: 1.7; }
 
 .intro-content {
-  margin-top: 200px;
-  display: flex; }
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
 .intro-info {
   display: flex;
   flex-direction: column; }
   .intro-info .intro-heading {
     font-weight: 700;
-    margin: 10rem 0 2rem 0; }
+    font-size: 44px;
+    margin: 1rem 0 1rem 0; }
+  .intro-info .intro-text {
+    max-width: 70%;
+    margin-bottom: 2rem; }
+  .intro-info .intro-buttons .btn:hover {
+    box-shadow: 0 0 8px #0693e3; }
+  .intro-info .intro-buttons .btn-dark {
+    margin-left: 0.5rem; }
+    .intro-info .intro-buttons .btn-dark:hover {
+      background-color: #0693e3; }
 
 .intro-image {
-  height: 500px;
-  width: 500px; }
+  height: 100%;
+  width: 100%; }
