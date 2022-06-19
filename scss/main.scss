@@ -94,6 +94,9 @@ i {
 }
 
 .nav-logo {
+  @include devices(mobile) {
+    display: none;
+  }
   display: flex;
   max-width: 40px;
   max-height: 40px;
@@ -112,7 +115,7 @@ i {
 
   display: flex;
   padding: 1em 0;
-  margin: 1em 0;
+  margin: 0.8em 0;
   max-width: 50%;
 
   line-height: 1;
@@ -133,14 +136,20 @@ i {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 1rem;
+    // top: 1rem;
     right: 0;
-    padding: 0.8em;
-    margin-right: 1rem;
+    padding: 1em;
+    margin: 1em;
     background-color: $main-background;
     border-radius: 6px;
     border: 0;
     cursor: pointer;
+    line-height: 1;
+
+    @include devices(mobile) {
+      position: relative;
+      margin: auto;
+    }
   }
 
   &:hover {

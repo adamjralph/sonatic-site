@@ -69,13 +69,16 @@ i {
   max-height: 40px;
   font-size: 1rem;
   margin: 1rem 0; }
+  @media only screen and (max-width: 468px) {
+    .nav-logo {
+      display: none; } }
   .nav-logo .logo-heading {
     padding: 1em 0; }
 
 .nav-links {
   display: flex;
   padding: 1em 0;
-  margin: 1em 0;
+  margin: 0.8em 0;
   max-width: 50%;
   line-height: 1; }
   @media only screen and (max-width: 768px) {
@@ -93,14 +96,18 @@ i {
       position: absolute;
       display: flex;
       align-items: center;
-      top: 1rem;
       right: 0;
-      padding: 0.8em;
-      margin-right: 1rem;
+      padding: 1em;
+      margin: 1em;
       background-color: #fff;
       border-radius: 6px;
       border: 0;
-      cursor: pointer; } }
+      cursor: pointer;
+      line-height: 1; } }
+  @media only screen and (max-width: 768px) and (max-width: 468px) {
+    .nav-toggle {
+      position: relative;
+      margin: auto; } }
   .nav-toggle:hover {
     background-color: #f4f4f4; }
   .nav-toggle .hamburger {
