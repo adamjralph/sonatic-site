@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <script src="./dist/js/app.js" defer></script>
 
     <title>Sonatic | Web Development Portfolio</title>
   </head>
@@ -30,18 +31,25 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <div class="mobile-menu">
-            <button class="nav-toggle">
-              <span class="hamburger"></span>
-            </button>
-            <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="sites.html">Examples</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+          <button class="nav-toggle" id="nav-toggle">
+            <span class="hamburger"></span>
+            <h3 class="menu-heading">Menu</h3>
+          </button>
         </nav>
+        <div class="mobile-menu">
+          <ul class="mobile-links">
+            <a href="index.html"><div class="link-div">Home</div></a>
+            <a href="examples.html"><div class="link-div">Examples</div></a>
+            <a href="http://github.com/adamjralph" target="_blank">
+              <div class="link-div">
+                Github<i class="fa-brands fa-github"></i>
+              </div>
+            </a>
+            <a href="resume.html"><div class="link-div">Resume</div></a>
+            <a href="contact.html"><div class="link-div">Contact</div></a>
+            <a href="about.html"><div class="link-div">About</div></a>
+          </ul>
+        </div>
         <div class="header-content">
           <h1 class="top-line">Fully Responsive Web Portfolio,</h1>
           <h1 class="second-line">With Live Demos</h1>
