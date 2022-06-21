@@ -67,6 +67,14 @@ i {
   font-weight: 500;
   font-size: 1em; }
 
+.btn:hover {
+  box-shadow: 0 0 8px #0693e3; }
+
+.btn-dark {
+  margin-left: 0.5rem; }
+  .btn-dark:hover {
+    background-color: #0693e3; }
+
 .btn-light {
   background-color: #fff;
   color: #263238; }
@@ -270,3 +278,17 @@ i {
     .intro-image {
       width: 50%;
       margin: 2rem auto; } }
+
+.learn-more {
+  display: flex;
+  flex-direction: column; }
+
+.top-header {
+  margin: 0 auto; }
+
+.learn-more-options {
+  display: flex; }
+  .learn-more-options .option {
+    text-align: center; }
+  .learn-more-options .btn {
+    width: 80%; }

@@ -93,6 +93,16 @@ i {
   font-size: 1em;
 }
 
+.btn:hover {
+  box-shadow: 0 0 8px $btn-hover;
+}
+.btn-dark {
+  margin-left: 0.5rem;
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
 .btn-light {
   background-color: $main-background;
   color: $font-color;
@@ -365,5 +375,27 @@ i {
   @include devices(mid) {
     width: 50%;
     margin: 2rem auto;
+  }
+}
+
+// Learn more section
+.learn-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header {
+  margin: 0 auto;
+}
+
+.learn-more-options {
+  display: flex;
+
+  .option {
+    text-align: center;
+  }
+
+  .btn {
+    width: 80%;
   }
 }
