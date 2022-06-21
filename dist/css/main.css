@@ -281,7 +281,10 @@ i {
 
 .learn-more {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  margin: 0; }
 
 .top-header {
   margin: 0 auto; }
