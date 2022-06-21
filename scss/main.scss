@@ -67,7 +67,7 @@ body {
 .content-container {
   max-width: $content-width;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 3rem;
 }
 
 // Components
@@ -93,12 +93,14 @@ i {
   font-size: 1em;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   box-shadow: 0 0 8px $btn-hover;
 }
 .btn-dark {
   margin-left: 0.5rem;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $btn-hover;
   }
 }
@@ -169,7 +171,8 @@ i {
     padding: 0 1em;
   }
 
-  li:hover {
+  li:hover,
+  li:focus {
     color: $main-color;
   }
 
@@ -201,8 +204,8 @@ i {
     }
   }
 
-  &:hover {
-    // border: 2px $light-color solid;
+  &:hover,
+  &:focus {
     background-color: $lighter-color;
   }
 
@@ -292,7 +295,8 @@ i {
     margin: auto;
     padding: 1em;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $lighter-color;
     }
 
@@ -388,13 +392,20 @@ i {
 .learn-more {
   display: flex;
   flex-direction: column;
-  margin: 25vh auto;
+  margin: 0 auto;
   width: 100%;
   max-width: $content-width;
 }
 
+.background-color {
+  background-color: $lighter-color;
+  width: 100%;
+  margin: auto;
+  padding: 15vh 0;
+}
+
 .top-header {
-  margin: 0 auto;
+  margin-bottom: 3rem;
   text-align: center;
   h1 {
     font-weight: 600;
@@ -407,19 +418,38 @@ i {
 }
 
 .learn-more-options {
-  display: flex;
+  display: grid;
+  grid-template-columns: (repeat(4, 1fr));
+
+  @include devices(mid) {
+    grid-template-columns: (repeat(2, 1fr));
+  }
 
   .option {
     text-align: center;
     width: 100%;
     max-width: 300px;
     margin: auto;
+
     h3,
     p {
       width: 100%;
       max-width: 300px;
       text-align: center;
-      margin: 0;
+    }
+
+    h3 {
+      padding: 1.5em 0;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    p {
+      padding-bottom: 2em;
+    }
+
+    button {
+      margin: 1em 0;
     }
   }
 
@@ -431,6 +461,7 @@ i {
 .icon-container {
   width: 100%;
   max-width: 50px;
+  max-height: 50px;
   margin: auto;
   .brand-icon {
     width: 100%;

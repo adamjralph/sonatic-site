@@ -45,9 +45,9 @@ body {
   padding: 0 1em; }
 
 .content-container {
-  max-width: 950px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 0 1em; }
+  padding: 0 3rem; }
 
 ul {
   list-style: none; }
@@ -67,12 +67,13 @@ i {
   font-weight: 500;
   font-size: 1em; }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   box-shadow: 0 0 8px #0693e3; }
 
 .btn-dark {
   margin-left: 0.5rem; }
-  .btn-dark:hover {
+  .btn-dark:hover, .btn-dark:focus {
     background-color: #0693e3; }
 
 .btn-light {
@@ -123,7 +124,8 @@ i {
       display: none; } }
   .nav-links li {
     padding: 0 1em; }
-  .nav-links li:hover {
+  .nav-links li:hover,
+  .nav-links li:focus {
     color: #076acd; }
   .nav-links li a {
     font-weight: 400;
@@ -148,7 +150,7 @@ i {
     .nav-toggle {
       position: relative;
       margin: auto; } }
-  .nav-toggle:hover {
+  .nav-toggle:hover, .nav-toggle:focus {
     background-color: #f4f4f4; }
   .nav-toggle .menu-heading {
     font-size: 1.5em;
@@ -219,7 +221,7 @@ i {
     border-bottom: 1px #dedede solid;
     margin: auto;
     padding: 1em; }
-    .mobile-menu .mobile-links .link-div:hover {
+    .mobile-menu .mobile-links .link-div:hover, .mobile-menu .mobile-links .link-div:focus {
       background-color: #f4f4f4; }
     .mobile-menu .mobile-links .link-div i {
       margin-left: 0.9em; }
@@ -284,12 +286,18 @@ i {
 .learn-more {
   display: flex;
   flex-direction: column;
-  margin: 25vh auto;
+  margin: 0 auto;
   width: 100%;
-  max-width: 950px; }
+  max-width: 1250px; }
+
+.background-color {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin: auto;
+  padding: 15vh 0; }
 
 .top-header {
-  margin: 0 auto;
+  margin-bottom: 3rem;
   text-align: center; }
   .top-header h1 {
     font-weight: 600; }
@@ -299,7 +307,11 @@ i {
     margin: auto; }
 
 .learn-more-options {
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  @media only screen and (max-width: 890px) {
+    .learn-more-options {
+      grid-template-columns: repeat(2, 1fr); } }
   .learn-more-options .option {
     text-align: center;
     width: 100%;
@@ -309,14 +321,22 @@ i {
     .learn-more-options .option p {
       width: 100%;
       max-width: 300px;
-      text-align: center;
-      margin: 0; }
+      text-align: center; }
+    .learn-more-options .option h3 {
+      padding: 1.5em 0;
+      font-size: 1.3rem;
+      font-weight: 800; }
+    .learn-more-options .option p {
+      padding-bottom: 2em; }
+    .learn-more-options .option button {
+      margin: 1em 0; }
   .learn-more-options .btn {
     width: 80%; }
 
 .icon-container {
   width: 100%;
   max-width: 50px;
+  max-height: 50px;
   margin: auto; }
   .icon-container .brand-icon {
     width: 100%;
