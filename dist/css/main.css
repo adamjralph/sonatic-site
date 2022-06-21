@@ -242,6 +242,8 @@ i {
       margin: 5rem 0;
       display: flex;
       flex-direction: column; } }
+  .intro-content img {
+    background: none; }
 
 .intro-info {
   display: flex;
@@ -253,7 +255,7 @@ i {
       margin: auto; } }
   .intro-info .intro-heading {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 3rem;
     margin: 1rem 0 1rem 0; }
   .intro-info .intro-text {
     max-width: 70%;
@@ -282,16 +284,40 @@ i {
 .learn-more {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between;
-  margin: 0; }
+  margin: 25vh auto;
+  width: 100%;
+  max-width: 950px; }
 
 .top-header {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
+  .top-header h1 {
+    font-weight: 600; }
+  .top-header p {
+    padding: 1.5rem;
+    width: 100%;
+    margin: auto; }
 
 .learn-more-options {
   display: flex; }
   .learn-more-options .option {
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto; }
+    .learn-more-options .option h3,
+    .learn-more-options .option p {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      margin: 0; }
   .learn-more-options .btn {
     width: 80%; }
+
+.icon-container {
+  width: 100%;
+  max-width: 50px;
+  margin: auto; }
+  .icon-container .brand-icon {
+    width: 100%;
+    max-width: 60px; }

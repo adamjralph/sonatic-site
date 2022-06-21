@@ -328,6 +328,11 @@ i {
     display: flex;
     flex-direction: column;
   }
+
+  img {
+    background: none;
+    // box-shadow: 0 0 3em $darker-color;
+  }
 }
 
 .intro-info {
@@ -341,7 +346,7 @@ i {
 
   .intro-heading {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 3rem;
     margin: 1rem 0 1rem 0;
   }
 
@@ -372,6 +377,7 @@ i {
 .intro-image {
   height: 100%;
   width: 100%;
+
   @include devices(mid) {
     width: 50%;
     margin: 2rem auto;
@@ -382,13 +388,22 @@ i {
 .learn-more {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: space-between;
-  margin: 0;
+  margin: 25vh auto;
+  width: 100%;
+  max-width: $content-width;
 }
 
 .top-header {
   margin: 0 auto;
+  text-align: center;
+  h1 {
+    font-weight: 600;
+  }
+  p {
+    padding: 1.5rem;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .learn-more-options {
@@ -396,9 +411,29 @@ i {
 
   .option {
     text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    h3,
+    p {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      margin: 0;
+    }
   }
 
   .btn {
     width: 80%;
+  }
+}
+
+.icon-container {
+  width: 100%;
+  max-width: 50px;
+  margin: auto;
+  .brand-icon {
+    width: 100%;
+    max-width: 60px;
   }
 }
