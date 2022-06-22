@@ -11,16 +11,19 @@
   box-sizing: border-box;
 }
 
+// Scroll
+
 // Typology
 html {
   font-family: museo-sans, sans-serif;
   font-style: normal;
   font-weight: 100;
   color: $font-color;
+  scroll-behavior: smooth;
 }
 
 p {
-  font-weight: 400;
+  font-weight: 400tml;
   font-size: 0.9rem;
   // background-color: $lighter-color;
 }

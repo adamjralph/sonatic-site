@@ -9,10 +9,11 @@ html {
   font-family: museo-sans, sans-serif;
   font-style: normal;
   font-weight: 100;
-  color: #263238; }
+  color: #263238;
+  scroll-behavior: smooth; }
 
 p {
-  font-weight: 400;
+  font-weight: 400tml;
   font-size: 0.9rem; }
 
 h1 {
