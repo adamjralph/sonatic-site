@@ -325,6 +325,14 @@ i {
   }
 }
 
+// Main page content
+.background-color {
+  background-color: $main-background;
+  width: 100%;
+  margin: auto;
+  padding: 18vh 0;
+}
+
 // Intro Content
 .intro-content {
   margin: 10rem 0;
@@ -384,6 +392,12 @@ i {
 .intro-image {
   height: 100%;
   width: 100%;
+  .background-color-grey {
+    background-color: $lightest-color;
+    width: 100%;
+    margin: auto;
+    padding: 18vh 0;
+  }
 
   @include devices(mid) {
     width: 50%;
@@ -400,11 +414,8 @@ i {
   max-width: $content-width;
 }
 
-.background-color {
+.background-color--grey {
   background-color: $lightest-color;
-  width: 100%;
-  margin: auto;
-  padding: 18vh 0;
 }
 
 .top-header {
@@ -426,9 +437,21 @@ i {
 
   @include devices(mid) {
     grid-template-columns: (repeat(2, 1fr));
+    // div:nth-child(n + 3) {
+    margin: 4em auto 0;
+    // }
   }
 
-  .option {
+  @include devices(mobile) {
+    display: flex;
+    flex-direction: column;
+    div:nth-child(n + 2) {
+      margin: 4em auto 0;
+    }
+  }
+
+  .option,
+  .option--example {
     text-align: center;
     width: 100%;
     max-width: 300px;
@@ -470,4 +493,53 @@ i {
     width: 100%;
     max-width: 60px;
   }
+}
+
+// Examples section
+.learn-more--examples {
+  // flex-direction: column;
+}
+
+.background-color-light {
+  background-color: $main-background;
+}
+
+.examples {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.example-container {
+  width: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  margin: auto;
+}
+
+.option--example {
+  position: relative;
+  border: 2px solid $test2;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  height: 500px;
+  margin: auto;
+}
+
+.example-image {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  height: 100%;
+  margin: auto;
+}
+
+.option-content {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
 }

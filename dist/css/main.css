@@ -236,6 +236,12 @@ i {
   .header-content h3 {
     line-height: 1.7; }
 
+.background-color {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  padding: 18vh 0; }
+
 .intro-content {
   margin: 10rem 0;
   display: grid;
@@ -279,6 +285,11 @@ i {
 .intro-image {
   height: 100%;
   width: 100%; }
+  .intro-image .background-color-grey {
+    background-color: #f7f7f7;
+    width: 100%;
+    margin: auto;
+    padding: 18vh 0; }
   @media only screen and (max-width: 890px) {
     .intro-image {
       width: 50%;
@@ -291,11 +302,8 @@ i {
   width: 100%;
   max-width: 1250px; }
 
-.background-color {
-  background-color: #f7f7f7;
-  width: 100%;
-  margin: auto;
-  padding: 18vh 0; }
+.background-color--grey {
+  background-color: #f7f7f7; }
 
 .top-header {
   margin-bottom: 3rem;
@@ -312,24 +320,37 @@ i {
   grid-template-columns: repeat(4, 1fr); }
   @media only screen and (max-width: 890px) {
     .learn-more-options {
-      grid-template-columns: repeat(2, 1fr); } }
-  .learn-more-options .option {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 4em auto 0; } }
+  @media only screen and (max-width: 468px) {
+    .learn-more-options {
+      display: flex;
+      flex-direction: column; }
+      .learn-more-options div:nth-child(n + 2) {
+        margin: 4em auto 0; } }
+  .learn-more-options .option,
+  .learn-more-options .option--example {
     text-align: center;
     width: 100%;
     max-width: 300px;
     margin: auto; }
     .learn-more-options .option h3,
-    .learn-more-options .option p {
+    .learn-more-options .option p,
+    .learn-more-options .option--example h3,
+    .learn-more-options .option--example p {
       width: 100%;
       max-width: 300px;
       text-align: center; }
-    .learn-more-options .option h3 {
+    .learn-more-options .option h3,
+    .learn-more-options .option--example h3 {
       padding: 1.5em 0;
       font-size: 1.3rem;
       font-weight: 800; }
-    .learn-more-options .option p {
+    .learn-more-options .option p,
+    .learn-more-options .option--example p {
       padding-bottom: 2em; }
-    .learn-more-options .option button {
+    .learn-more-options .option button,
+    .learn-more-options .option--example button {
       margin: 1em 0; }
   .learn-more-options .btn {
     width: 80%; }
@@ -342,3 +363,41 @@ i {
   .icon-container .brand-icon {
     width: 100%;
     max-width: 60px; }
+
+.background-color-light {
+  background-color: #fff; }
+
+.examples {
+  grid-template-columns: repeat(2, 1fr); }
+
+.example-container {
+  width: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  margin: auto; }
+
+.option--example {
+  position: relative;
+  border: 2px solid blue;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  height: 500px;
+  margin: auto; }
+
+.example-image {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  height: 100%;
+  margin: auto; }
+
+.option-content {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  height: 100%;
+  margin: auto;
+  z-index: 1; }
