@@ -1,25 +1,78 @@
-.background-color-light {
-  background-color: #076acd; }
+#examples-section .background-color {
+  padding: 2rem 0; }
 
 .examples {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3em;
-  border: 2px solid blue; }
+  gap: 5em; }
+  @media only screen and (max-width: 890px) {
+    .examples {
+      grid-template-columns: 1fr; } }
 
 .option-example {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: auto;
-  box-shadow: 0 5px 10px 0 #e6e6e6; }
-
-.example-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: 50%;
-  max-height: 25%; }
+  background-color: #076acd;
+  overflow: hidden; }
+  .option-example::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: inherit;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 3s cubic-bezier(0.2, 1, 0.3, 1); }
+  .option-example:hover::after, .option-example:focus::after {
+    opacity: 1;
+    transform: opacity 1sec; }
+  .option-example:hover .example-image,
+  .option-example:focus .example-image {
+    transform: scale(1.2); }
+  .option-example:hover .example-text,
+  .option-example:focus .example-text {
+    opacity: 1;
+    transform: translateY(40%); }
+  .option-example .example-image {
+    height: auto;
+    display: block;
+    transform: translateZ(0);
+    transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); }
+  .option-example .example-image::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    overflow: hidden; }
+  .option-example .example-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    line-height: 0; }
+  .option-example .example-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fcfcfc;
+    transform: translateY(-20%);
+    transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+    transition-delay: 300ms; }
+  .option-example example-text-wrap {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: translateY(-50%); }
+  .option-example example-title {
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 5px 0 0 0; }
 
 *,
 *::before,
