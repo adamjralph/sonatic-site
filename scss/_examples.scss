@@ -1,0 +1,30 @@
+.background-color-light {
+  background-color: $main-color;
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // width: 100%;
+  // margin: 0 auto;
+  gap: 3em;
+  border: 2px solid $test2;
+}
+
+.option-example {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 5px 10px 0 $light-color;
+  // max-width: 80%;
+  // max-height: 40%;
+}
+
+.example-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 25%;
+}

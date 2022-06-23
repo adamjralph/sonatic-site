@@ -1,3 +1,26 @@
+.background-color-light {
+  background-color: #076acd; }
+
+.examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  border: 2px solid blue; }
+
+.option-example {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 5px 10px 0 #e6e6e6; }
+
+.example-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 25%; }
+
 *,
 *::before,
 *::after {
@@ -363,41 +386,3 @@ i {
   .icon-container .brand-icon {
     width: 100%;
     max-width: 60px; }
-
-.background-color-light {
-  background-color: #fff; }
-
-.examples {
-  grid-template-columns: repeat(2, 1fr); }
-
-.example-container {
-  width: 100%;
-  max-width: 50px;
-  max-height: 50px;
-  margin: auto; }
-
-.option--example {
-  position: relative;
-  border: 2px solid blue;
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  height: 500px;
-  margin: auto; }
-
-.example-image {
-  position: absolute;
-  width: 100%;
-  max-width: 500px;
-  max-height: 500px;
-  height: 100%;
-  margin: auto; }
-
-.option-content {
-  position: absolute;
-  width: 100%;
-  max-width: 500px;
-  max-height: 500px;
-  height: 100%;
-  margin: auto;
-  z-index: 1; }
