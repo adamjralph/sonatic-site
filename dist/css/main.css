@@ -142,7 +142,8 @@ i {
   padding: 0.8em;
   width: 35%;
   font-weight: 500;
-  font-size: 1em; }
+  font-size: 1em;
+  cursor: pointer; }
 
 .btn:hover,
 .btn:focus {
