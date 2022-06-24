@@ -32,7 +32,7 @@
 
   &:hover::after,
   &:focus::after {
-    opacity: 1;
+    opacity: 0.9;
     transform: opacity 1sec;
   }
 

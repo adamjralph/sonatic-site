@@ -33,9 +33,6 @@
     "url": "https://github.com/adamjralph/sonatic-site/issues"
   },
   "homepage": "http://sonatic.dev",
-  "devDependencies": {
-    "node-sass": "^7.0.1"
-  },
   "dependencies": {
     "autoprefixer": "^10.4.2",
     "browser-sync": "^2.27.7",
