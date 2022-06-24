@@ -1,0 +1,47 @@
+@use "colors" as c;
+@use "fonts" as f;
+
+:root {
+  --h1-size: 2rem;
+}
+
+// Typography
+html {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: c.$font-dark;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  // background-color: $lighter-color;
+}
+
+// Header typography
+.top-line {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.second-line {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
