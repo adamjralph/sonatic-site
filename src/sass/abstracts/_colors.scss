@@ -1,4 +1,58 @@
 // colors
+:root {
+  
+  /***********************
+  * Key to variable codes
+  ************************/
+  
+  // a = default
+  // b = alt
+  // z = alt two
+  // c = color
+  // t = theme
+  // p = primary 
+  // s = secondary
+  // l = light
+  // d = dark
+  
+  // Color theme = ct
+
+  // Brand = br
+  --cta-brp: #076acd;
+  --cta-brs: #539cdf;
+
+  // Font = ft
+  --cta-ftd: #29353b;
+  --cta-ftl: hsl(0, 0%, 99)
+
+  // Background = bg
+  --cta-bg: #fff;
+  --cta-bgp: #d9f4ff;
+  --cta-bgs: var(--lshade-5);
+
+  // logo
+  --cta-plogo: #0066cc;
+  --cat-llogo: #cfd8dc;
+  --cta-dlogo: #29353b;
+
+  // Black, white, gray
+  --blk: #000; 
+  --wht: #fff;
+  --gry: #333;
+
+
+  // light-shades
+  --lshade-1: hsl(0, 0%, 70%);
+  --lshade-2: hsl(0, 0%, 87%);
+  --lshade-3: hsl(0, 0%, 90%);
+  --lshade-4: hsl(0, 0%, 95%);
+  --lshade-5: hsl(0, 0%, 97%);
+
+  // test colors for production
+  --ts-red: red;
+  --rs-blue: blue;
+
+};
 
 // Theme colors
 $test: red;
@@ -9,6 +63,7 @@ $main-background: #fff;
 $main-light: #d9f4ff;
 $white: #fff;
 $grey: #333;
+
 
 $lightest-color: hsl(0, 0%, 97%);
 $lighter-color: hsl(0, 0%, 95.61%);
@@ -27,3 +82,7 @@ $font-light: hsl(0, 0%, 99);
 
 // Button effects
 $btn-hover: #0693e3;
+
+div {
+  
+}
