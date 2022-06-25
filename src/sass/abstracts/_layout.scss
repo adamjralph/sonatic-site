@@ -4,3 +4,36 @@
   --header-width: 2400px;
   --content-width: 1250px;
 }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Scroll
+
+body {
+  line-height: 1.6;
+  background-color: var(--cta-bgp);
+  color: var(--cta-ftd);
+}
+
+// Utilities
+
+// Components
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: 400;
+}
+
+i {
+  display: inline-block;
+}
