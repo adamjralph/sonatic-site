@@ -1,0 +1,39 @@
+@use "../abstracts/media" as media;
+
+// Mobile menu overlay
+.mobile-menu {
+  display: none;
+  @include media.devices(tablet) {
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 3em var(--lshade-1);
+    margin: auto;
+    width: 80%;
+    background-color: var(--cta-bgp);
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
+
+  .mobile-links {
+    display: none;
+    @include media.devices(tablet) {
+      display: block;
+    }
+    @include media.devices(mobile) {
+      text-align: center;
+    }
+  }
+  .mobile-links .link-div {
+    border-bottom: 1px var(--lshade-2) solid;
+    margin: auto;
+    padding: 1em;
+
+    &:hover,
+    &:focus {
+      background-color: var(--lshade-4);
+    }
+
+    i {
+      margin-left: 0.9em;
+    }
+  }
+}

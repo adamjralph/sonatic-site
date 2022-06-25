@@ -1,20 +1,19 @@
 // colors
 :root {
-  
   /***********************
   * Key to variable codes
   ************************/
-  
+
   // a = default
   // b = alt
   // z = alt two
   // c = color
   // t = theme
-  // p = primary 
+  // p = primary
   // s = secondary
   // l = light
   // d = dark
-  
+
   // Color theme = ct
 
   // Brand = br
@@ -23,23 +22,33 @@
 
   // Font = ft
   --cta-ftd: #29353b;
-  --cta-ftl: hsl(0, 0%, 99)
+  --cta-ftl: hsl(0, 0%, 99);
 
   // Background = bg
   --cta-bg: #fff;
-  --cta-bgp: #d9f4ff;
+  --cta-bgp: #fff;
   --cta-bgs: var(--lshade-5);
 
   // logo
   --cta-plogo: #0066cc;
-  --cat-llogo: #cfd8dc;
+  --cta-llogo: #cfd8dc;
   --cta-dlogo: #29353b;
 
+  // Buttons = btn
+
+  // Primary
+  --cta-pbtn-bg: #076acd;
+  --cta-pbtn-txt: var(--cta-ftl);
+  // Light
+  --cta-lbtn-bg: var(--cta-bgp);
+  --cta-lbtn-txt: var(--cta-ftd);
+  // Hover
+  --cta-btn-hover: #0693e3;
+
   // Black, white, gray
-  --blk: #000; 
+  --blk: #000;
   --wht: #fff;
   --gry: #333;
-
 
   // light-shades
   --lshade-1: hsl(0, 0%, 70%);
@@ -51,8 +60,7 @@
   // test colors for production
   --ts-red: red;
   --rs-blue: blue;
-
-};
+}
 
 // Theme colors
 $test: red;
@@ -63,7 +71,6 @@ $main-background: #fff;
 $main-light: #d9f4ff;
 $white: #fff;
 $grey: #333;
-
 
 $lightest-color: hsl(0, 0%, 97%);
 $lighter-color: hsl(0, 0%, 95.61%);
@@ -82,7 +89,3 @@ $font-light: hsl(0, 0%, 99);
 
 // Button effects
 $btn-hover: #0693e3;
-
-div {
-  
-}

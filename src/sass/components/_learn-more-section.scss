@@ -1,0 +1,90 @@
+@use "../abstracts/media" as media;
+// Learn more section
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--content-width);
+}
+
+.background-color--grey {
+  background-color: var(--lshade-5);
+}
+
+.top-header {
+  margin-bottom: 3rem;
+  text-align: center;
+  h1 {
+    font-weight: 600;
+  }
+  p {
+    padding: 1.5rem;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.learn-more-options {
+  display: grid;
+  grid-template-columns: (repeat(4, 1fr));
+
+  @include media.devices(mid) {
+    grid-template-columns: (repeat(2, 1fr));
+    // div:nth-child(n + 3) {
+    margin: 4em auto 0;
+    // }
+  }
+
+  @include media.devices(mobile) {
+    display: flex;
+    flex-direction: column;
+    div:nth-child(n + 2) {
+      margin: 4em auto 0;
+    }
+  }
+
+  .option,
+  .option--example {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+
+    h3,
+    p {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    h3 {
+      padding: 1.5em 0;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    p {
+      padding-bottom: 2em;
+    }
+
+    button {
+      margin: 1em 0;
+    }
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+.icon-container {
+  width: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  margin: auto;
+  .brand-icon {
+    width: 100%;
+    max-width: 60px;
+  }
+}

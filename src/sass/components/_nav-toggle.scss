@@ -1,0 +1,88 @@
+@use "../abstracts/media" as media;
+
+// Nav toggle
+
+.nav-toggle {
+  display: none;
+  @include media.devices(tablet) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--cta-bgp);
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    line-height: 1;
+
+    @include media.devices(mobile) {
+      position: relative;
+      margin: auto;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--lshade-4);
+  }
+
+  .menu-heading {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+  }
+
+  .menu-heading {
+    display: inline-block;
+    margin: 0 0 0 0.5rem;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    width: 1.5em;
+    height: 0.09rem;
+    background-color: var(--cta-ftd);
+    // transition: transform 258ms ease-in-out;
+    @include media.devices(mobile) {
+      width: 2em;
+      height: 0.15rem;
+    }
+  }
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 6px;
+}
+.hamburger::after {
+  top: 6px;
+}
+
+.nav-open .hamburger {
+  transform: rotate(45deg);
+}
+
+.nav-open .hamburger::before {
+  opacity: 0;
+}
+
+.nav-open .hamburger::after {
+  transform: rotate(90deg) translate(-6px);
+}
+
+.nav-open .mobile-menu {
+  display: flex;
+}

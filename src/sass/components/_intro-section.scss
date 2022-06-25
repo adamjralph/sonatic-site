@@ -1,0 +1,76 @@
+@use "../abstracts/media" as media;
+
+// Intro section
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  @include media.devices(mid) {
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .intro-heading {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .intro-text {
+    max-width: 70%;
+    margin-bottom: 2rem;
+    @include media.devices(mid) {
+      margin: auto;
+    }
+  }
+
+  .intro-buttons {
+    @include media.devices(mid) {
+      margin-top: 2rem;
+    }
+    @include media.devices(mobile) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0.5em;
+
+      .btn-dark {
+        display: none;
+      }
+
+      .btn-light {
+        background-color: var(--cta-brp);
+        color: var(--wht);
+        margin-top: 2em;
+        width: 50%;
+      }
+    }
+    .btn:hover,
+    .btn:focus {
+      box-shadow: 0 0 8px var(--cta-btn-hover);
+    }
+    .btn-dark {
+      margin-left: 0.5rem;
+      &:hover,
+      &:focus {
+        background-color: var(--cta-btn-hover);
+      }
+    }
+  }
+}
+
+.intro-image {
+  height: 100%;
+  width: 100%;
+  .background-color-grey {
+    background-color: var(--lshade-5);
+    width: 100%;
+    margin: auto;
+    padding: 18vh 0;
+  }
+
+  @include media.devices(mid) {
+    width: 50%;
+    margin: 2rem auto;
+  }
+}
