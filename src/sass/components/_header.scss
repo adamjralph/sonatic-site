@@ -66,7 +66,6 @@
 
 // Header content
 .header-content {
-  // border: 1px $test2 solid;
   padding-top: 1.5rem;
 
   h1,
@@ -97,29 +96,5 @@
     .comma {
       display: none;
     }
-  }
-}
-
-// Main page content
-.background-color {
-  background-color: var(--wht);
-  width: 100%;
-  margin: auto;
-  padding: 18vh 0;
-}
-
-// Intro Content
-.intro-content {
-  margin: 10rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  @include media.devices(mid) {
-    margin: 5rem 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  img {
-    background: none;
   }
 }

@@ -1,0 +1,44 @@
+@use "../abstracts/media" as media;
+// Footer
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px var(--lshade-2) solid;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+.footer__about {
+  // border: 2px solid red;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  @include media.devices(tablet) {
+    display: none;
+  }
+
+  display: flex;
+  margin: 0.8em 0;
+  max-width: 100%;
+
+  line-height: 1;
+
+  li + li {
+    padding-top: 1em;
+  }
+
+  li:hover,
+  li:focus {
+    color: var(--cta-brp);
+  }
+
+  li a {
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
