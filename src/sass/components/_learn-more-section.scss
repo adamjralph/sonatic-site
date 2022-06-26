@@ -6,6 +6,8 @@
   margin: 0 auto;
   width: 100%;
   max-width: var(--content-width);
+  flex-wrap: wrap;
+  padding: 10em 0;
 }
 
 .background-color--grey {
@@ -31,9 +33,7 @@
 
   @include media.devices(mid) {
     grid-template-columns: (repeat(2, 1fr));
-    // div:nth-child(n + 3) {
     margin: 4em auto 0;
-    // }
   }
 
   @include media.devices(mobile) {
@@ -50,6 +50,7 @@
     width: 100%;
     max-width: 300px;
     margin: auto;
+    padding: 1.5em 0;
 
     h3,
     p {
@@ -71,11 +72,20 @@
     button {
       margin: 1em 0;
     }
+
+    img:hover,
+    img:focus {
+      box-shadow: 0 0 8px var(--cta-btn-hover);
+    }
   }
 
   .btn {
     width: 80%;
   }
+}
+
+.version-control {
+  // margin: 1em 0;
 }
 
 .icon-container {
