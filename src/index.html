@@ -118,7 +118,6 @@
           <div class="learn-more">
             <div class="top-header">
               <h1>Built With Attention</h1>
-              <!-- <p>Works as intended with plenty of user feedback</p> -->
             </div>
             <div class="learn-more-options">
               <div class="option">
@@ -130,25 +129,21 @@
                   />
                 </div>
                 <h3>HTML5</h3>
-                <p>
+                <!-- <p>
                   The Structure of the web. Designed for clarity and
                   accessability
-                </p>
-                <button class="btn btn-dark">Learn More</button>
+                </p> -->
+                <!-- <button class="btn btn-dark">Learn More</button> -->
               </div>
               <div class="option">
                 <div class="icon-container">
                   <img
-                    src="./assets/icons/css3-brands.svg"
+                    src="./assets/icons/css.png"
                     alt="CSS icon"
                     class="brand-icon"
                   />
                 </div>
                 <h3>CSS</h3>
-                <p>
-                  The Beauty of the web. Making pages easy on the eye and delivering user feedback
-                </p>
-                <button class="btn btn-dark">Learn More</button>
               </div>
               <div class="option">
                 <div class="icon-container">
@@ -159,24 +154,77 @@
                   />
                 </div>
                 <h3>JavaScript</h3>
-                <p>
-                  Enhancing functionality and faciltating interactivity where necessary
-                </p>
-                <button class="btn btn-dark">Learn More</button>
               </div>
               <div class="option">
                 <div class="icon-container">
                   <img
                     src="./assets/icons/git-alt-brands.svg"
-                    alt=""
+                    alt="git icon"
                     class="brand-icon"
                   />
                 </div>
                 <h3>Version Control</h3>
-                <p>
-                  Command line git pushed to GitHub for easy deployments and open-source opportunites
-                </p>
-                <button class="btn btn-dark">Learn More</button>
+              </div>
+
+              <div class="option">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/MongoDB_Logo_RGB_Logomark_Default-Slate.svg"
+                    alt="mongodb icon"
+                    class="brand-icon"
+                  />
+                </div>
+                <h3>MongoDB</h3>
+              </div>
+              <div class="option">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/sass-brands.svg"
+                    alt="SASS icon"
+                    class="brand-icon"
+                  />
+                </div>
+                <h3>Sass</h3>
+              </div>
+              <div class="option">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/node-js-brands.svg"
+                    alt="nodejs icon"
+                    class="brand-icon"
+                  />
+                </div>
+                <h3>nodejs</h3>
+              </div>
+              <div class="option">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/expressjs-icon.svg"
+                    alt="express icon"
+                    class="brand-icon"
+                  />
+                </div>
+                <h3>express</h3>
+              </div>
+              <div class="option last-1">
+                <div class="icon-container">
+                  <img
+                  src="./assets/icons/terminal-solid.svg"
+                  alt="command line icon"
+                  class="brand-icon"
+                  />
+                </div>
+                <h3>Command line</h3>
+              </div>
+              <div class="option last-2">
+                <div class="icon-container">
+                  <img
+                    src="./assets/icons/linux-brands.svg"
+                    alt="linux icon"
+                    class="brand-icon"
+                  />
+                </div>
+                <h3>Linux</h3>
               </div>
             </div>
           </div>
@@ -250,22 +298,58 @@
       </div>
     </section>
 
-    <footer class="footer" id="footer">
+    <footer id="footer">
       <div class="content-container">
-        <div class="about">
-          <div class="about__logo">
-            <a class="nav-logo" href="index.html">
-              <img
-                class="logo"
-                src="./assets/img/Sonatic-trio.png"
-                alt="Portfolio Logo"
-              />
-              <h4 class="logo-heading">Evensite</h4>
-            </a>
-            
+        <div class="footer">
+            <div class="footer__logo">
+              <a class="footer-link
+              " href="index.html">
+                <img
+                  class="logo"
+                  src="./assets/img/Sonatic-trio.png"
+                  alt="Portfolio Logo"
+                />
+              </a>
+              <h4 class="footer__logo-heading">Evensite</h4>
+              <p class="footer_copyright">
+                &copy; 2022 Evensite
+              </p>
+          </div>
+
+          
+          <div class="footer__links">
+            <ul class="footer__links--1">
+              <li><a href="sites.html">Examples</a></li>
+              <li><a href="http://github.com/adamjralph" target="_blank">GitHub</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <ul class="footer__links--2">
+              <li><a href="sites.html">Examples</a></li>
+              <li><a href="http://github.com/adamjralph" target="_blank">GitHub</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          
+          <div class="mailing-list card">
+            <h2 class="mailing-list__heading">
+              Sign up to my mailing list
+            </h2>
+            <form action="submit">
+              <!-- <label for="email" class="form-label"></label> -->
+              <input class="mailing-list__input" type="email" name="email" placeholder="mail@email">
+              <button class="btn btn-dark mailing-list__btn">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
   </body>
-</html>
+  </html>

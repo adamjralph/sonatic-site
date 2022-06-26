@@ -11,6 +11,13 @@
   padding: 0 3rem;
 }
 
+// Main page content
+.background-color {
+  background-color: var(--wht);
+  width: 100%;
+  margin: auto;
+}
+
 // Buttons
 .btn {
   border: 1px var(--cta-brp) solid;
