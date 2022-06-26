@@ -7,10 +7,22 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px var(--lshade-2) solid;
+  margin-inline: auto;
+  width: 100%;
   @include media.devices(mobile) {
     flex-direction: column;
     align-items: center;
     border: 0;
+  }
+}
+
+.logo-heading {
+  padding: 1em 0;
+  @include media.devices(mobile) {
+    width: 100%;
+    padding-top: 1em;
+    margin: auto;
+    font-size: 1.3rem;
   }
 }
 
@@ -20,20 +32,18 @@
   height: 40px;
   font-size: 1rem;
   margin: 1rem 0;
-}
 
-.logo-heading {
-  padding: 1em 0;
   @include media.devices(mobile) {
     text-align: center;
-    margin: auto;
     width: 100%;
+    margin: 1em auto;
   }
 }
 
 .logo {
   @include media.devices(mobile) {
     display: none;
+    width: 0;
   }
 }
 
