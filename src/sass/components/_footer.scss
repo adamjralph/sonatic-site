@@ -1,4 +1,5 @@
 @use "../abstracts/media" as media;
+
 // Footer
 
 .footer {
@@ -9,17 +10,44 @@
   margin-inline: auto;
   margin-top: 3rem;
   padding: 2rem 0;
+
+  @include media.devices(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media.devices(mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .nav-logo {
+      display: block;
+    }
+    &__about,
+    .footer__logo-heading {
+      margin-inline: auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
-.footer__about {
+.footer__logo {
+  display: flex;
+  flex-direction: column;
   padding: 1em;
-}
 
-// .footer__about {
-//   border: 2px solid red;
-//   background-color: var(--lshade-4);
-//   border: 1px solid var(--lshade-2);
-// }
+  .logo {
+    // display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin: 1rem 0;
+    margin: 0 auto;
+  }
+}
 
 .mailing-list {
   text-align: center;
@@ -49,34 +77,27 @@
   }
 
   &__input {
+    text-align: center;
+    max-width: 80%;
     padding: 0.5em;
     border: 1px solid var(--lshade-2);
     border-radius: 3px;
+    margin: 2em auto;
   }
 
   &__btn {
-    margin-top: 1em;
     padding: 5px;
+    font-size: 0.8rem;
   }
 }
 
-// .footer__links--1,
 .footer__links {
-  // border: 2px solid red;
   display: flex;
   flex-direction: column;
   text-align: center;
   @include media.devices(tablet) {
     display: none;
   }
-
-  // &--1 {
-  //   text-align: center;
-  // }
-
-  // &--2 {
-  //   text-align: right;
-  // }
 
   margin: 0.8em 0;
   max-width: 100%;
