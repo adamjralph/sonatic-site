@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   @include media.devices(mid) {
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
     margin: auto;
   }
@@ -40,7 +40,8 @@
     max-width: 70%;
     margin-bottom: 2rem;
     @include media.devices(mid) {
-      margin: auto;
+      margin: 0 auto;
+      max-width: 90%;
     }
   }
 
