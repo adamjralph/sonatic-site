@@ -19,7 +19,8 @@
 
     @include media.devices(mobile) {
       position: relative;
-      margin: auto;
+      margin: 2em;
+      padding-top: 2em;
     }
   }
 
