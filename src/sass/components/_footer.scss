@@ -1,0 +1,119 @@
+@use "../abstracts/media" as media;
+
+// Footer
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px var(--lshade-2) solid;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 3rem;
+  padding: 2rem 0;
+
+  @include media.devices(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media.devices(mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .nav-logo {
+      display: block;
+    }
+    &__about,
+    .footer__logo-heading {
+      margin-inline: auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin: 1rem 0;
+    margin: 0 auto;
+  }
+}
+
+.mailing-list {
+  text-align: center;
+  margin: 1px;
+
+  padding: 1em;
+
+  &:hover {
+    margin: 0;
+    border: 1px solid var(--cta-brp);
+    border-radius: 3px;
+    background-color: var(--cta-brs);
+    color: var(--wht);
+    transition-property: background-color, color;
+    transition-duration: 1s;
+
+    .mailing-list__btn {
+      background-color: var(--cta-bgp);
+      color: var(--cta-brp);
+      transition-property: background-color, color;
+      transition-duration: 1s;
+    }
+  }
+
+  &__heading {
+    font-size: 1.1em;
+  }
+
+  &__input {
+    text-align: center;
+    max-width: 80%;
+    padding: 0.5em;
+    border: 1px solid var(--lshade-2);
+    border-radius: 3px;
+    margin: 1em auto;
+  }
+
+  &__btn {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include media.devices(tablet) {
+    display: none;
+  }
+
+  margin: 0.8em 0;
+  max-width: 100%;
+
+  line-height: 1;
+
+  li + li {
+    padding-top: 1em;
+  }
+
+  li:hover,
+  li:focus {
+    color: var(--cta-brp);
+  }
+
+  li a {
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}

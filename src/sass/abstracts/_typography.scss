@@ -1,3 +1,4 @@
+@use "./media" as media;
 @use "colors" as c;
 @use "fonts" as f;
 
@@ -44,4 +45,20 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 1rem;
+}
+
+// Media
+@include media.devices(mobile) {
+  .top-line {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
