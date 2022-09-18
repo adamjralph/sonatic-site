@@ -7,7 +7,7 @@
   margin: 4.5rem;
   display: grid;
   grid-template-columns: repeat(8, 200px);
-  grid-template-rows: repeat(8, 200px);
+  grid-template-rows: repeat(4, 200px);
   margin-inline: auto;
   @include media.devices(mid) {
     margin: 5rem 0;
