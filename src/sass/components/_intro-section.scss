@@ -4,7 +4,7 @@
 
 // Intro Content
 .intro-content {
-  margin: 7rem;
+  margin: 4.5rem;
   display: grid;
   grid-template-columns: repeat(8, 200px);
   grid-template-rows: repeat(8, 200px);
@@ -28,16 +28,17 @@
   grid-column: 1 / 4;
   grid-row: 1 / 4;
   line-height: 1;
-  margin: 1rem 0 1rem 0;
+  place-content: start;
+  // margin: 1rem 0 1rem 0;
   letter-spacing: 0.01ch;
 }
 
 .intro-text {
   grid-column: 1 / 4;
   grid-row: 3 / 4;
-  font-weight: 800;
+  font-weight: 500;
   // max-width: 70%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   @include media.devices(mid) {
     margin: 0 auto;
     max-width: 90%;
@@ -67,6 +68,7 @@
   grid-column: 1 / 3;
   grid-row: 4 / 5;
   place-self: start;
+  margin-block-start: -1rem;
   width: 100%;
 
   @include media.devices(mid) {
