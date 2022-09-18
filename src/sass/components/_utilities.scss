@@ -20,11 +20,11 @@
 
 // Buttons
 .btn {
-  border: 1px var(--cta-brp) solid;
-  padding: 0.8em;
-  width: 35%;
+  border: 1px var(--cta-brp) inset;
+  padding: 1.5rem;
+  // width: 65%;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 2em;
   cursor: pointer;
 }
 
@@ -33,7 +33,7 @@
   box-shadow: 0 0 8px var(--cta-btn-hover);
 }
 .btn-dark {
-  margin-left: 0.5rem;
+  // margin-left: 0.5rem;
   &:hover,
   &:focus {
     background-color: var(--cta-btn-hover);
