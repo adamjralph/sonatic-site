@@ -1,4 +1,4 @@
-@use "./media" as media;
+@use "media" as media;
 @use "colors" as c;
 @use "fonts" as f;
 
@@ -23,8 +23,8 @@ p {
 
 // Header typography
 .top-line {
-  font-weight: 400;
-  font-size: 3.5rem;
+  font-weight: 900;
+  font-size: 8rem;
 }
 
 .second-line {
@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 // Media
