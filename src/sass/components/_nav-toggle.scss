@@ -19,8 +19,9 @@
 
     @include media.devices(mobile) {
       position: relative;
-      margin: 2em;
-      padding-top: 2em;
+      align-items: baseline;
+      margin-inline-end: 1.5rem;
+      padding: 0;
     }
   }
 
@@ -32,16 +33,20 @@
   .menu-heading {
     font-size: 1.5em;
     font-weight: 500;
+    margin-inline-start: 1rem;
+
+    padding-block-end: 0.5rem;
   }
 
   .hamburger {
     display: block;
     position: relative;
-  }
-
-  .menu-heading {
-    display: inline-block;
-    margin: 0 0 0 0.5rem;
+    @include media.devices(mobile) {
+      align-self: center;
+      margin: 0;
+      margin-block-end: 0.2rem;
+      padding: 0;
+    }
   }
 
   .hamburger,
