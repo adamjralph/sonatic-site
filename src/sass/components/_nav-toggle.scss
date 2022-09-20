@@ -7,44 +7,45 @@
   @include media.devices(tablet) {
     position: absolute;
     display: flex;
-    align-items: center;
+    // align-items: center;
+    // justify-content: space-between;
     right: 0;
-    // padding: 1em;
-    // margin: 1em;
     background-color: var(--cta-bgp);
     border-radius: 6px;
     border: 0;
     cursor: pointer;
-    line-height: 1;
   }
   @include media.devices(mobile) {
     position: relative;
-    align-items: baseline;
-    margin-inline-end: 1.5rem;
+    // align-items: center;
+    // justify-self: end;
+    margin-inline-end: 1rem;
+    cursor: pointer;
+    width: 50%;
+    height: auto;
     // padding: 0;
   }
 
-  &:hover,
-  &:focus {
-    background-color: var(--lshade-4);
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--lshade-4);
+  // }
 
-  .menu-heading {
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-inline-start: 1rem;
+  // .menu-heading {
+  //   font-size: 1.5em;
+  //   font-weight: 500;
+  //   margin-inline-start: 1rem;
 
-    padding-block-end: 0.6rem;
-  }
+  //   padding-block-end: 0.6rem;
+  // }
 
   .hamburger {
-    display: block;
-    position: relative;
+    // display: block;
+    // position: relative;
+    // align-self: center;
     @include media.devices(mobile) {
-      align-self: center;
-      margin: 0;
-      margin-block-end: 0.5rem;
       padding: 0;
+      align-self: flex-end;
     }
   }
 
