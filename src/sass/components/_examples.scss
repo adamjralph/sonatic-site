@@ -1,7 +1,7 @@
 @use "../abstracts/media" as media;
 
-#examples-section .background-color {
-  padding: 2rem 0;
+.examples-section {
+  padding-block: 4rem;
 }
 
 .examples {
@@ -87,14 +87,14 @@
     transition-delay: 300ms;
   }
 
-  example-text-wrap {
+  .example-text-wrap {
     position: absolute;
     width: 100%;
     top: 100%;
     transform: translateY(-50%);
   }
 
-  example-title {
+  .example-title {
     font-size: 2rem;
     padding: 0 1rem;
     margin: 5px 0 0 0;

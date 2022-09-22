@@ -64,7 +64,7 @@
     margin-block-start: 2rem;
   }
   @include media.devices(mobile) {
-    margin-block-start: 5rem;
+    margin-block: 5rem;
   }
   .btn:hover,
   .btn:focus {

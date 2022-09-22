@@ -35,6 +35,9 @@
 .sub-heading {
   margin-inline: auto;
   margin-bottom: 3rem;
+  @include media.devices(mid) {
+    margin-bottom: 1rem;
+  }
 }
 
 .learn-more-options {
@@ -48,8 +51,8 @@
   }
 
   @include media.devices(mobile) {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0;
     div:nth-child(n + 2) {
       margin: 1em auto 0;
     }
@@ -57,7 +60,10 @@
 }
 
 .option * ~ * {
-  margin-block-start: 1em;
+  margin-block-start: 1rem;
+  @include media.devices(mobile) {
+    margin-block-start: 0.5rem;
+  }
 }
 
 .option {
