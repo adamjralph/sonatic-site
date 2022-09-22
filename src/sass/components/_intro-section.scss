@@ -16,7 +16,7 @@
   }
 
   @include media.devices(mobile) {
-    margin: 2rem 0;
+    margin: 2rem 0 4rem;
   }
 
   img {
@@ -87,18 +87,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0.5em;
-
-    .btn-dark {
-      display: none;
-    }
-
-    .btn-light {
-      background-color: var(--cta-brp);
-      color: var(--wht);
-      margin-top: 2em;
-      width: 50%;
-    }
   }
   .btn:hover,
   .btn:focus {

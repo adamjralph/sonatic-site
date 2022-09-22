@@ -10,7 +10,7 @@
   padding-block: 8rem;
   // margin-block: 5rem;
   @include media.devices(mobile) {
-    padding: 3em 0;
+    margin: 3em 0;
   }
 }
 
@@ -76,12 +76,6 @@
   &:hover,
   &:focus {
     transform: scale(1.01, 1.01);
-  }
-
-  .svg {
-    // width: 1em;
-    // height: 1em;
-    background-color: black;
   }
 }
 
